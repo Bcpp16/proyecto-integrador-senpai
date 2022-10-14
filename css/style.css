@@ -66,11 +66,165 @@ header img {
 }
 
 .mainContainer {
-    background-image: url(img/manos.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/manos.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.mainTxt {
+    width: 40%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.gridContainer {
+    display: grid;
+    padding: 15vh;
+    background-color: var(--cl-blue);
+
+    grid-template-areas: "pic1 text1"
+        " text2 pic2 ";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cell1 {
+    grid-area: pic1;
+    background-image: url(/img/oficina.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 45vh;
     width: auto;
+
+
+}
+
+.cell2 {
+    grid-area: text1;
+    color: #fff;
+    padding: 15vh;
+}
+
+.cell3 {
+    grid-area: text2;
+    color: #fff;
+    padding: 15vh;
+}
+
+.cell4 {
+    grid-area: pic2;
+    background-image: url(/img/voluntariado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+}
+
+
+
+.container2 {
+
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.opText {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.gridOportunity {
+    display: grid;
+
+    grid-template-areas: "voluntario donar reciclar llamados";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.icono1 {
+    grid-area: voluntario;
+    background-color: var(--cl-red);
+    width: 80%;
+    height: auto
+}
+
+.icono2 {
+    grid-area: donar;
+    background-color: var(--cl-orange);
+    width: 80%;
+    height: auto
+}
+
+.icono3 {
+    grid-area: reciclar;
+    background-color: var(--cl-green);
+    width: 80%;
+    height: auto
+}
+
+.icono4 {
+    grid-area: llamados;
+    background-color: var(--cl-cyan);
+    width: 80%;
+    height: auto
+}
+
+.newsSection {
+    background-color: var(--cl-blue);
+    height: 50vh;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.sectionContact {
+    height: 45vh;
+
+}
+
+footer {
+    height: 25vh;
+    background-color: var(--cl-purple);
+}
+
+.footerContainer {
+    display: flex;
+    color: #fff;
+    list-style-type: none;
+    padding: 3vh 10vw;
+    justify-content: space-between;
+}
+
+hr {
+    color: #fff;
+}
+
+#hr1 {
+    padding-top: 1vh;
+}
+
+#hr2 {
+    margin-top: 3vh;
+}
+
+.navFooter {
+    margin-right: 40vw;
 }

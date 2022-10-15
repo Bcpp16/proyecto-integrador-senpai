@@ -4,8 +4,9 @@
 :root {
 
     /* Colors */
-
-    --cl-purple: #494CD3;
+    --cl-blank: #fff;
+    --cl-purple: #4C33C6;
+    --bg-footer: #4A44CF;
     --cl-blue: #5398FF;
     --cl-red: #DC3546;
     --cl-orange: #FF9C08;
@@ -52,6 +53,13 @@ header img {
     margin-left: 40px;
 }
 
+
+.navBar li a:hover {
+    cursor: pointer;
+    color: var(--cl-purple);
+}
+
+
 .divBtn {
     display: flex;
     align-items: center;
@@ -63,6 +71,10 @@ header img {
     background-color: var(--cl-purple);
     border: none;
     color: #FFFF;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .mainContainer {
@@ -202,7 +214,8 @@ header img {
 
 footer {
     height: 25vh;
-    background-color: var(--cl-purple);
+    background: rgb(72,83,215);
+    background: linear-gradient(90deg, rgba(72,83,215,1) 0%, rgba(76,53,199,1) 74%);
 }
 
 .footerContainer {
@@ -221,10 +234,31 @@ hr {
     padding-top: 1vh;
 }
 
-#hr2 {
+/* #hr2 {
     margin-top: 3vh;
-}
+} */
 
 .navFooter {
     margin-right: 40vw;
+}
+
+.footLink{
+    padding-bottom: 10px;
+}
+
+.footLink a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--cl-blank);
+}
+
+.footIcons a i{
+    color: var(--cl-blank);
+}
+
+.copyright{
+    margin: 10px;
+    text-align: center;
+    background: rgb(72,83,215);
+    background: linear-gradient(90deg, rgba(72,83,215,1) 0%, rgba(76,53,199,1) 74%);
 }

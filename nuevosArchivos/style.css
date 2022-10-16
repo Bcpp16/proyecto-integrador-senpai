@@ -19,7 +19,7 @@
 }
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -27,11 +27,11 @@
 }
 
 
-body{
+body {
     font-family: 'DM Sans', sans-serif;
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
 
@@ -85,15 +85,15 @@ header img {
 .btn:hover {
     cursor: pointer;
     background-color: var(--bg-footer);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 
 /* ======== HERO ======== */
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/manos.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Materiales/manos.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -118,11 +118,11 @@ header img {
 }
 
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-.heroTxt{
+.heroTxt {
     margin-top: 20px;
 }
 
@@ -130,27 +130,34 @@ h1{
 /* ======== MAIN ======== */
 /* ======== ARTICLE 1 ======== */
 
-.infoConteiner{
+.divContainer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cl-blue);
+}
+
+.infoContainer {
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "img1 text1"
-                         "text2 img2";
-    
+        "text2 img2";
+
     background-color: var(--cl-blue);
 
 }
 
 
-.item{
- padding: 50px;
+.item {
+    padding: 50px;
 }
 
 
-.item1{
+.item1 {
     grid-area: img1;
 
-    background-image: url(/img/oficina.png);
+    background-image: url(/Materiales/oficina.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -161,33 +168,34 @@ h1{
 }
 
 
-.item2{
+.item2 {
     grid-area: text1;
     margin-right: 130px;
     margin-top: 120px;
 }
 
-.item3{
+.item3 {
     grid-area: text2;
     margin-left: 130px;
     margin-bottom: 80px;
 }
 
-.item2, .item3{
+.item2,
+.item3 {
     color: var(--cl-blank);
 }
 
 
-.infoTitle{
+.infoTitle {
     margin-bottom: 20px;
 }
 
 
 
-.item4{
+.item4 {
     grid-area: img2;
 
-    background-image: url(/img/voluntariado.jpg);
+    background-image: url(/Materiales/voluntariado.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -203,21 +211,21 @@ h1{
 /* ======== ARTICLE 2 ======== */
 /* Title and text */
 
-.oppContainer{
+.oppContainer {
     height: 35rem;
 }
 
-.content{
+.content {
     margin-top: 80px;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.content h2{
+.content h2 {
     margin-bottom: 30px;
 }
 
-.content p{
+.content p {
     margin: 0 auto;
     width: 60%;
 }
@@ -225,215 +233,294 @@ h1{
 
 /* Colored cards */
 
-.cards{
+.gridContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    width: 70%;
     display: grid;
     grid-template-areas: "voluntario donar reciclar llamados";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr; */
+    justify-items: center;
 }
 
 
-.card1{
+.card1 {
     grid-area: voluntario;
     padding: 30px 30px;
     background-color: var(--cl-red);
-    width: 290px;
+    width: 95%;
     border-radius: 20px;
-    margin-left: 130px;
+
 }
 
-.card1:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card2{
+.card2 {
     grid-area: donar;
     padding: 30px 30px;
     background-color: var(--cl-orange);
-    width: 290px;
+    width: 95%;
     border-radius: 20px;
-    margin: 0 auto;
+
 }
 
-.card2:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card3{
+.card3 {
     grid-area: reciclar;
     padding: 30px 30px;
     background-color: var(--cl-green);
-    width: 290px;
+    width: 95%;
     border-radius: 20px;
-    margin: 0 auto;  
+
 }
 
-.card3:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card4{
+.card4 {
     grid-area: llamados;
     padding: 30px 30px;
     background-color: var(--cl-cyan);
-    width: 290px;
+    width: 95%;
     border-radius: 20px;
-    margin-right: 130px;
+
 }
 
-.card4:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
 /* Cards content */
-.mas{
+.mas {
     float: right;
 }
 
-.iconCard{
+.iconCard {
     padding-top: 10px;
 }
 
-.titleCard{
+.titleCard {
     font-size: 32px;
     padding-top: 20px;
     text-align: start;
     color: var(--cl-blank);
 }
 
-.card2 .titleCard{
+.card2 .titleCard {
     padding-top: 45px;
 }
 
-.card3 .titleCard{
+.card3 .titleCard {
     padding-top: 45px;
 }
 
 /* ======== ARTICLE 3 ======== */
 /* Title and text */
 
-.newsContainer{
-    height: 50rem;
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55rem;
     background-color: var(--cl-blue);
 }
 
-.newsContent{
+.newsContent {
     text-align: center;
     color: var(--cl-blank);
+
 }
 
-.titleNews{
+.titleNews {
     padding-top: 80px;
     font-size: 30px;
 }
 
-.linkNews{
+.linkNews {
     color: var(--cl-blank);
 }
 
-/* news cards */
+/* /////////////////////NEWS CARDS/////////////////////////////////// */
 
-.newsCards{
+
+.newsCards {
+    width: 70%;
+    height: 350px;
     margin-top: 50px;
     display: grid;
-    grid-template-areas: "news1 news1 news2 news3";
+    grid-template-areas: "news1 news2 news3 news4";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr; */
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
 .cd1 {
     grid-area: news1;
     background-color: var(--cl-blank);
-    width: 290px;
-    margin-left: 130px;
+    width: 95%;
     border-radius: 10px;
-  }
-  
-  .cd1:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
 
+}
 
-  .imgCard{
+.cd2 {
+    grid-area: news2;
+    background-color: var(--cl-blank);
+    width: 95%;
+    border-radius: 10px;
+
+}
+
+.cd3 {
+    grid-area: news3;
+    background-color: var(--cl-blank);
+    width: 95%;
+    border-radius: 10px;
+}
+
+.cd4 {
+    grid-area: news4;
+    background-color: var(--cl-blank);
+    width: 95%;
+    border-radius: 10px;
+
+}
+
+.imgCard {
     position: relative;
     display: flex;
     flex-direction: column;
-  }
 
- .imgCard .btnCard{
+}
+
+.imgCard .btnCard {
     background-color: var(--cl-purple);
     color: var(--cl-blank);
     border-radius: 10px;
     padding: 3px 5px;
     border: none;
-
-
     position: absolute;
     margin: 40px;
-    transform: translate(-50%, -50%);
-  }
+    transform: translate(-30%, 900%);
+}
 
+.imgCard img {
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
 
-
-  .container {
+.container {
     padding: 5px 16px;
-  }
+}
 
-  .headerCard{
+.headerCard {
     display: flex;
     justify-content: space-between;
     margin: 5px;
-  }
 
-  .date{
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: var(--cl-grey);
-  }
+}
 
-  .date p{
-    display: inline;
-  }
-
-
-  .hour{
+.hour {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: var(--cl-grey);
-  }
+}
 
-  .hour p{
-    display: inline;
-  }
-
-
-.txtCard h3{
+.txtCard h3 {
     font-size: 16px;
     font-weight: 500;
     margin-top: 25px;
 }
 
 
-.txtCard p{
+.txtCard p {
     margin-top: 20px;
     color: var(--cl-grey);
 }
 
-.moreCard{
+.moreCard {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
     padding: 10px;
 }
 
-.moreCard img{
+.moreCard img {
     padding: 5px;
 }
-.moreCard a{
+
+.moreCard a {
     text-decoration: none;
     color: var(--cl-grey);
 }
 
+
+
 /* ======== CONTACTO ======== */
 
-.containerContact{
+.textContact {
+    text-align: center;
+
+}
+
+.flexContactCont {
+    justify-content: center;
+    display: flex;
+}
+
+.containerContact {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+
+}
+
+form {
+    display: flex;
+    align-content: center;
+    margin-right: 200px;
+}
+
+.contactImage {
+    background-image: url(/Materiales/laptop-escritorio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 50%;
+}
+
+.inputs {
+    margin-left: 10px;
+}
+
+.forms textarea {
+    margin: 20px;
+}
+
+.contactBtn {
+    text-align: center;
+}
+
+.contactBtn #contactBtn {
+
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: var(--cl-purple);
+    border: none;
+    color: #FFFF;
+    transition: 0.3s;
+}
+
+/* .containerContact {
     display: grid;
     grid-template-areas: "image form";
     grid-template-columns: 1fr 1fr;
@@ -441,39 +528,37 @@ h1{
     height: 20rem;
 }
 
-.image{
+.contactImage {
     grid-area: image;
 
-    background-image: url(/img/laptop-escritorio.jpg);
+    background-image: url(/Materiales/laptop-escritorio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 15rem;
 
     margin-right: 130px;
-    
+
 }
 
-.forms h2{
+.forms h2 {
     text-align: center;
 }
 
 .forms {
     grid-area: form;
-    
+
 }
 
-.forms textarea{
-    margin-left: 30px;
-}
 
+ */
 
 
 /* ======== FOOTER ======== */
 
 footer {
     height: 15rem;
-    background: linear-gradient(90deg, rgba(72,85,216,1) 0%, rgba(76,53,199,1) 100%);
+    background: linear-gradient(90deg, rgba(72, 85, 216, 1) 0%, rgba(76, 53, 199, 1) 100%);
 }
 
 .footerContainer {
@@ -489,17 +574,17 @@ footer {
     margin-right: 700px;
 }
 
-.footLink{
+.footLink {
     padding-bottom: 10px;
 }
 
-.footLink a{
+.footLink a {
     text-decoration: none;
     list-style: none;
     color: var(--cl-blank);
 }
 
-.footIcons a img{
+.footIcons a img {
     margin-top: 10px;
 }
 
@@ -516,8 +601,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.copy{
+.copy {
     text-align: center;
     margin-top: 5px;
 }
-

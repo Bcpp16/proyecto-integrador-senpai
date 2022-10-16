@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+:root {
+
+    /* Colors */
+    --cl-blank: #fff;
+    --cl-black: #131313;
+    --cl-grey: #6E6E6E;
+    --cl-purple: #4C33C6;
+    --bg-footer: #4A44CF;
+    --cl-blue: #5398FF;
+    --cl-red: #DC3546;
+    --cl-orange: #FF9C08;
+    --cl-green: #27A844;
+    --cl-cyan: #17A2B7;
+
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/* ======== HEADER ======== */
+
+header {
+    display: flex;
+    padding: 30px 130px;
+    justify-content: space-between;
+}
+
+header img {
+    width: 12rem;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    align-items: center;
+    margin-right: 460px;
+}
+
+.navbar li a {
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+.navbar li a:hover {
+    cursor: pointer;
+    color: var(--cl-purple);
+}
+
+
+.containerBtn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: var(--cl-purple);
+    border: none;
+    color: #FFFF;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--bg-footer);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+
+
+/* ======== HERO ======== */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/manos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.heroContent {
+    width: 40rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 40px;
+}
+
+.heroTxt{
+    margin-top: 20px;
+}
+
+
+/* ======== MAIN ======== */
+/* ======== ARTICLE 1 ======== */
+
+.infoConteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img1 text1"
+                         "text2 img2";
+    
+    background-color: var(--cl-blue);
+
+}
+
+
+.item{
+ padding: 50px;
+}
+
+
+.item1{
+    grid-area: img1;
+
+    background-image: url(/img/oficina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    margin-left: 130px;
+    margin-top: 80px;
+
+}
+
+
+.item2{
+    grid-area: text1;
+    margin-right: 130px;
+    margin-top: 120px;
+}
+
+.item3{
+    grid-area: text2;
+    margin-left: 130px;
+    margin-bottom: 80px;
+}
+
+.item2, .item3{
+    color: var(--cl-blank);
+}
+
+
+.infoTitle{
+    margin-bottom: 20px;
+}
+
+
+
+.item4{
+    grid-area: img2;
+
+    background-image: url(/img/voluntariado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18rem;
+
+    margin-right: 130px;
+    margin-bottom: 80px;
+
+}
+
+
+
+/* ======== ARTICLE 2 ======== */
+/* Title and text */
+
+.oppContainer{
+    height: 35rem;
+}
+
+.content{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.content h2{
+    margin-bottom: 30px;
+}
+
+.content p{
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+/* Colored cards */
+
+.cards{
+    display: grid;
+    grid-template-areas: "voluntario donar reciclar llamados";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+}
+
+
+.card1{
+    grid-area: voluntario;
+    padding: 30px 30px;
+    background-color: var(--cl-red);
+    width: 290px;
+    border-radius: 20px;
+    margin-left: 130px;
+}
+
+.card1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card2{
+    grid-area: donar;
+    padding: 30px 30px;
+    background-color: var(--cl-orange);
+    width: 290px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.card2:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card3{
+    grid-area: reciclar;
+    padding: 30px 30px;
+    background-color: var(--cl-green);
+    width: 290px;
+    border-radius: 20px;
+    margin: 0 auto;  
+}
+
+.card3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card4{
+    grid-area: llamados;
+    padding: 30px 30px;
+    background-color: var(--cl-cyan);
+    width: 290px;
+    border-radius: 20px;
+    margin-right: 130px;
+}
+
+.card4:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+
+/* Cards content */
+.mas{
+    float: right;
+}
+
+.iconCard{
+    padding-top: 10px;
+}
+
+.titleCard{
+    font-size: 32px;
+    padding-top: 20px;
+    text-align: start;
+    color: var(--cl-blank);
+}
+
+.card2 .titleCard{
+    padding-top: 45px;
+}
+
+.card3 .titleCard{
+    padding-top: 45px;
+}
+
+/* ======== ARTICLE 3 ======== */
+/* Title and text */
+
+.newsContainer{
+    height: 50rem;
+    background-color: var(--cl-blue);
+}
+
+.newsContent{
+    text-align: center;
+    color: var(--cl-blank);
+}
+
+.titleNews{
+    padding-top: 80px;
+    font-size: 30px;
+}
+
+.linkNews{
+    color: var(--cl-blank);
+}
+
+/* news cards */
+
+.newsCards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "news1 news1 news2 news3";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+}
+
+.cd1 {
+    grid-area: news1;
+    background-color: var(--cl-blank);
+    width: 290px;
+    margin-left: 130px;
+    border-radius: 10px;
+  }
+  
+  .cd1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+  .imgCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+ .imgCard .btnCard{
+    background-color: var(--cl-purple);
+    color: var(--cl-blank);
+    border-radius: 10px;
+    padding: 3px 5px;
+    border: none;
+
+
+    position: absolute;
+    margin: 40px;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  .container {
+    padding: 5px 16px;
+  }
+
+  .headerCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  .date{
+    color: var(--cl-grey);
+  }
+
+  .date p{
+    display: inline;
+  }
+
+
+  .hour{
+    color: var(--cl-grey);
+  }
+
+  .hour p{
+    display: inline;
+  }
+
+
+.txtCard h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+
+.txtCard p{
+    margin-top: 20px;
+    color: var(--cl-grey);
+}
+
+.moreCard{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.moreCard img{
+    padding: 5px;
+}
+.moreCard a{
+    text-decoration: none;
+    color: var(--cl-grey);
+}
+
+/* ======== CONTACTO ======== */
+
+.containerContact{
+    display: grid;
+    grid-template-areas: "image form";
+    grid-template-columns: 1fr 1fr;
+    margin: 80px 130px 80px 130px;
+    height: 20rem;
+}
+
+.image{
+    grid-area: image;
+
+    background-image: url(/img/laptop-escritorio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+
+    margin-right: 130px;
+    
+}
+
+.forms h2{
+    text-align: center;
+}
+
+.forms {
+    grid-area: form;
+    
+}
+
+.forms textarea{
+    margin-left: 30px;
+}
+
+
+
+/* ======== FOOTER ======== */
+
+footer {
+    height: 15rem;
+    background: linear-gradient(90deg, rgba(72,85,216,1) 0%, rgba(76,53,199,1) 100%);
+}
+
+.footerContainer {
+    display: flex;
+    color: #fff;
+    list-style-type: none;
+    padding: 3vh 10vw;
+    justify-content: space-between;
+}
+
+
+.navFooter {
+    margin-right: 700px;
+}
+
+.footLink{
+    padding-bottom: 10px;
+}
+
+.footLink a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--cl-blank);
+}
+
+.footIcons a img{
+    margin-top: 10px;
+}
+
+
+hr {
+    color: #fff;
+}
+
+.hr1 {
+    padding-top: 10px;
+}
+
+.hr2 {
+    margin-bottom: 10px;
+}
+
+.copy{
+    text-align: center;
+    margin-top: 5px;
+}
+

@@ -89,6 +89,93 @@ header img {
 
 }
 
+/*==========MODAL=============*/
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/ opacity */
+
+}
+
+.flexModal {
+    display: flex;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-image: url(/Materiales/imagen-modal.JPG);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-color: #fefefe;
+    margin: 15% 0 15% 15%;
+    /* 15% from the top and centered */
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #fefefe;
+    width: 45%;
+    height: 650px;
+    /* Could be more or less, depending on screen size */
+}
+
+.content2 {
+    background-color: #fefefe;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    width: 45%;
+    height: 650px;
+    margin: 15% 15% 15% 0;
+    /* 15% from the top and centered */
+    padding: 20px;
+
+}
+
+.content2 h2 {
+    margin-top: 55px;
+}
+
+.comeBack {
+    color: #aaa;
+    float: left;
+}
+
+.comeBack:hover,
+.comeBack:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* ======== HERO ======== */
 
@@ -466,7 +553,7 @@ h1 {
 
 .textContact {
     text-align: center;
-    margin-right: 230px;
+    margin-right: -120px;
 }
 
 .flexContactCont {
@@ -477,7 +564,7 @@ h1 {
 .containerContact {
     display: flex;
     width: 70%;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 30rem;
 
@@ -486,7 +573,8 @@ h1 {
 form {
     display: flex;
     align-content: center;
-    margin-right: 200px;
+    margin-right: 100px;
+
 }
 
 .contactImage {
@@ -498,6 +586,10 @@ form {
     width: 50%;
 }
 
+.forms {
+    width: 30%;
+}
+
 .inputs {
     margin-left: 20px;
 }
@@ -505,12 +597,12 @@ form {
 .inputs input {
     border-radius: 5px;
     padding: 0 10px;
-    width: 230px;
+    width: 200px;
     height: 25px;
     margin: 10px auto;
 }
 
-.labelMenssage{
+.labelMenssage {
     padding-left: 20px;
     margin: 10px;
 }
@@ -523,7 +615,7 @@ form {
 
 .contactBtn {
     text-align: center;
-    margin-right: 230px;
+    margin-right: -120px;
     margin-top: 20px;
 }
 

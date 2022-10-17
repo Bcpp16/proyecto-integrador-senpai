@@ -29,6 +29,10 @@ h2 {
   font-size: 30px;
 }
 
+.topnav {
+  display: none;
+}
+
 /* ======== HEADER ======== */
 
 header {
@@ -84,30 +88,22 @@ header img {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.6);
-  /* Black w/ opacity */
 }
 
 .flexModal {
   display: flex;
 }
 
-/* Modal Content/Box */
+/*================Modal Content/Box=================*/
 .modal-content {
   background-image: url(/Materiales/imagen-modal.JPG);
   background-position: center;
@@ -115,13 +111,11 @@ header img {
   background-size: cover;
   background-color: #fefefe;
   margin: 15% 0 15% 15%;
-  /* 15% from the top and centered */
   padding: 15px;
   border-radius: 10px 0 0 10px;
   border: 1px solid #fefefe;
   width: 45%;
   height: 650px;
-  /* Could be more or less, depending on screen size */
 }
 
 .content2 {
@@ -131,7 +125,6 @@ header img {
   width: 45%;
   height: 650px;
   margin: 15% 15% 15% 0;
-  /* 15% from the top and centered */
   padding: 20px;
 }
 
@@ -151,7 +144,7 @@ header img {
   cursor: pointer;
 }
 
-/* The Close Button */
+/*=====================Close Button=================== */
 .close {
   color: #aaa;
   float: right;
@@ -166,7 +159,7 @@ header img {
   cursor: pointer;
 }
 
-/* CARD MODAL */
+/* ====================CARD MODAL======================== */
 
 .cardModal {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -178,17 +171,15 @@ header img {
   grid-template-areas: "color text";
   grid-template-columns: 20% 80%;
   grid-template-rows: 100%;
-
   margin-top: 30px;
 }
 
 .color {
-  grid-area: color;
-  border-radius: 20px 0 0 20px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: color;
+  border-radius: 20px 0 0 20px;
 }
 
 .color img {
@@ -234,10 +225,12 @@ header img {
   justify-content: flex-end;
   align-items: flex-end;
   margin-top: 20px;
+
 }
 
 .arrow a img {
   margin-right: 10px;
+  width: 20px;
 }
 
 /* ======== HERO ======== */
@@ -327,6 +320,7 @@ h1 {
 .item2,
 .item3 {
   color: var(--cl-blank);
+
 }
 
 .infoTitle {
@@ -368,7 +362,7 @@ h1 {
   width: 60%;
 }
 
-/* Colored cards */
+/* =============Colored cards========== */
 
 .gridContainer {
   display: flex;
@@ -382,12 +376,6 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
-
-/* .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 .card1 {
   grid-area: voluntario;
@@ -425,7 +413,7 @@ h1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Cards content */
+/* ======================Cards content========================== */
 .mas {
   float: right;
 }
@@ -486,6 +474,7 @@ h1 {
   grid-template-rows: 1fr;
   justify-items: center;
 }
+
 
 .cd1 {
   grid-area: news1;
@@ -666,48 +655,13 @@ form {
   transition: 0.3s;
 }
 
-/* .containerContact {
-    display: grid;
-    grid-template-areas: "image form";
-    grid-template-columns: 1fr 1fr;
-    margin: 80px 130px 80px 130px;
-    height: 20rem;
-}
-
-.contactImage {
-    grid-area: image;
-
-    background-image: url(/Materiales/laptop-escritorio.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 15rem;
-
-    margin-right: 130px;
-
-}
-
-.forms h2 {
-    text-align: center;
-}
-
-.forms {
-    grid-area: form;
-
-}
-
-
- */
-
 /* ======== FOOTER ======== */
 
 footer {
   height: 15rem;
-  background: linear-gradient(
-    90deg,
-    rgba(72, 85, 216, 1) 0%,
-    rgba(76, 53, 199, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(72, 85, 216, 1) 0%,
+      rgba(76, 53, 199, 1) 100%);
 }
 
 .footerContainer {
@@ -751,4 +705,189 @@ hr {
 .copy {
   text-align: center;
   margin-top: 5px;
+}
+
+
+/*///////////////////////MOBILE////////////////////////////////*/
+@media(max-width: 390px) {
+
+  header {
+    display: none;
+  }
+
+  /* Style the navigation menu */
+  .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: var(--cl-blank);
+    position: relative;
+  }
+
+  .topnav img {
+    width: 30%;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: var(--cl-black);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    color: var(--cl-black);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: var(--cl-blank);
+    color: black;
+  }
+
+  /*===================HERO===================*/
+
+
+  .hero {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/Materiales/manos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heroContent {
+    display: flex;
+    font-size: 10px;
+    width: auto;
+  }
+
+  /*================INFO=========================*/
+
+  .divContainer {
+    width: auto;
+    display: block;
+    text-align: center;
+
+  }
+
+  .infoContainer {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "section1"
+      "section2"
+      "section3"
+      "section4";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .item {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+
+  .item1 {
+    grid-area: section2;
+    height: 350px;
+    width: auto;
+
+  }
+
+  .item2 {
+    grid-area: section1;
+    height: 350px;
+    width: auto;
+  }
+
+  .item3 {
+    grid-area: section3;
+    height: 350px;
+    width: auto;
+  }
+
+  .item4 {
+    grid-area: section4;
+    height: 350px;
+    width: auto;
+  }
+
+  /*=============OPP=====================*/
+
+  .cards {
+    height: 500px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: "opp1"
+      "opp2"
+      "opp3"
+      "opp4";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .card1 {
+    grid-area: opp1;
+  }
+
+  .card2 {
+    grid-area: opp2;
+
+  }
+
+  .card3 {
+    grid-area: opp3;
+  }
+
+  .card4 {
+    grid-area: opp4;
+  }
+
+  .oppContainer {
+    height: 1400px;
+  }
+
+  /*===============NEWS=======================*/
+  .newsContainer {
+    height: 250px;
+  }
+
+  .newsCards {
+    display: none;
+  }
+
+
+  /*==================CONTACT===================*/
+  .containerContact {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contactImage {
+    display: none;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  /* footer {
+    display: none;
+  } */
 }

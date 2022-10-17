@@ -7,9 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prueba boostrap proyecto</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active"><img src="/Materiales/logo.png" alt=""></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
   <header>
     <div class="imgLogo"><img src="/Materiales/logo.png" alt="" /></div>
 
@@ -25,7 +44,7 @@
 
     <div id="myModal" class="modal">
       <div class="flexModal">
-        <!-- Modal content -->
+        <!-- Modal -->
         <div class="modal-content">
         </div>
         <div class="content2">
@@ -35,28 +54,28 @@
 
           <div class="cardModal">
             <div class="color color1">
-                <img src="/Materiales/icono-maletin.png" alt="Avatar"/>
+              <img src="/Materiales/icono-maletin.png" alt="Avatar" />
             </div>
-          <div class="contentCardModal">
+            <div class="contentCardModal">
               <h4 class="title1">MI EMPRESA</h4>
               <p>Breve descripcion a que nos referimos</p>
-            <div class="arrow">
-              <a href="#"><img src="/Materiales/icono-flecha.png" alt="" style="width: 20px;"/></a>
+              <div class="arrow">
+                <a href="#"><img src="/Materiales/icono-flecha.png" alt="" /></a>
+              </div>
             </div>
-          </div>
           </div>
 
           <div class="cardModal">
             <div class="color color2">
-                <img src="/Materiales/icono-persona.png" alt="Avatar"/>
+              <img src="/Materiales/icono-persona.png" alt="Avatar" />
             </div>
-          <div class="contentCardModal">
+            <div class="contentCardModal">
               <h4 class="title2">MI ORGANIZACIÓN</h4>
               <p>Estamos para ayudarlos a tener exito</p>
-            <div class="arrow">
-              <a href="#"><img src="/Materiales/icono-flecha.png" alt="" style="width: 20px;"/></a>
+              <div class="arrow">
+                <a href="#"><img src="/Materiales/icono-flecha.png" alt="" /></a>
+              </div>
             </div>
-          </div>
           </div>
 
         </div>
@@ -81,7 +100,7 @@
 
         <div class="item item1"></div>
 
-        <div cell2 class="item item2">
+        <div class="item item2">
           <h2 class="infoTitle">Soluciones para empresas</h2>
           <p>Generamos un medio para que las empresas se involucren en actividades de responsabilidad social.</p>
           <p>¡Creá un grupo de voluntarios en tu organización y se parte del cambio!</p>
@@ -146,7 +165,7 @@
     </div>
 
     <section class="newsCards">
-      <div class="cd1 card">
+      <div class="cd1 newCard">
         <div class="imgCard">
           <img src="/Materiales/imgPrimerCard.jpg" alt="Avatar">
           <button class="btnCard">ANIMALES</button>
@@ -163,6 +182,7 @@
               <span> 4 min</span>
             </div>
           </div>
+
           <div class="txtCard">
             <h3>Fundappas abre nuevo centro </h3>
             <p>El nuevo centro estará ubicado dentro del predio municipal Parque Rivera. <br>
@@ -173,10 +193,11 @@
             <img src="/Materiales/icono-flecha.png" alt="">
             <a class="linkCard" href="#">ver más</a>
           </div>
+
         </div>
       </div>
 
-      <div class="cd2  card">
+      <div class="cd2  newCard">
         <div class="imgCard">
           <img src="/Materiales/imgSegundaCard.jpg" alt="Avatar">
           <button class="btnCard">URUGUAY</button>
@@ -193,6 +214,7 @@
               <span> 4 min</span>
             </div>
           </div>
+
           <div class="txtCard">
             <h3>DIRECTV y TECHO inauguraron un nuevo espacio deportivo</h3>
             <p>Los vecinos del lugar recibieron con alegría la concreción de este proyecto,
@@ -203,10 +225,11 @@
             <img src="/Materiales/icono-flecha.png" alt="">
             <a class="linkCard" href="#">ver más</a>
           </div>
+
         </div>
       </div>
 
-      <div class="cd3 card">
+      <div class="cd3 NewCard">
         <div class="imgCard">
           <img src="/Materiales/imgTercerCard.jpg" alt="Avatar">
           <button class="btnCard">VOLUNTARIADO</button>
@@ -236,7 +259,7 @@
         </div>
       </div>
 
-      <div class="cd4 card">
+      <div class="cd4 NewCard">
         <div class="imgCard">
           <img src="/Materiales/imgCuartaCard.jpg" alt="Avatar">
           <button class="btnCard">URUGUAY</button>

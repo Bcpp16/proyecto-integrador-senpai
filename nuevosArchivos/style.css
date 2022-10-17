@@ -298,18 +298,18 @@ h1 {
 }
 
 .titleCard {
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 20px;
     text-align: start;
     color: var(--cl-blank);
 }
 
 .card2 .titleCard {
-    padding-top: 45px;
+    padding-top: 50px;
 }
 
 .card3 .titleCard {
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 /* ======== ARTICLE 3 ======== */
@@ -499,22 +499,32 @@ form {
 }
 
 .inputs {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .inputs input {
     border-radius: 5px;
     padding: 0 10px;
+    width: 230px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.labelMenssage{
+    padding-left: 20px;
+    margin: 10px;
 }
 
 .forms textarea {
-    margin: 20px;
+    margin: 10px 30px;
     border-radius: 5px;
+    height: 90px;
 }
 
 .contactBtn {
     text-align: center;
     margin-right: 230px;
+    margin-top: 20px;
 }
 
 .contactBtn #contactBtn {

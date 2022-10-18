@@ -36,32 +36,33 @@ h2 {
 
 /* ======== HEADER ======== */
 
-
-header {
-  display: flex;
-  padding: 30px 130px;
-  justify-content: space-between;
+.topnav a.icon {
+  display: none;
 }
 
-header img {
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.topnav img {
   width: 12rem;
   height: auto;
 }
 
-.navbar {
-  display: flex;
-  list-style-type: none;
-  gap: 50px;
-  align-items: center;
-  margin-right: 460px;
-}
-
-.navbar li a {
+.topnav a {
+  text-decoration: none;
   font-weight: 500;
   margin-left: 40px;
 }
 
-.navbar li a:hover {
+.myLinks {
+  margin-right: 40rem;
+}
+
+.topnav a:hover {
   cursor: pointer;
   color: var(--cl-purple);
 }
@@ -427,7 +428,7 @@ h1 {
   width: 70px;
 }
 
-#iconCD1{
+#iconCD1 {
   width: 45px;
 }
 
@@ -750,11 +751,9 @@ hr {
 
 @media(max-width: 390px) {
 
-
-  header {
+  .containerBtn {
     display: none;
   }
-
 
   .topnav {
     display: block;
@@ -764,7 +763,7 @@ hr {
   }
 
   .topnav img {
-    width: 30%;
+    width: 50%;
   }
 
 
@@ -795,6 +794,7 @@ hr {
     background-color: var(--cl-blank);
 
   }
+
 
 
   /*===================HERO===================*/

@@ -12,40 +12,31 @@
 
 <body>
 
-  <div class="topnav">
-    <a href="#home" class="active"><img src="/img/logo.png" alt="imagen logo nexos"></a>
-
-    <div id="myLinks">
-      <a href="#about">Nosotros</a>
-      <a href="#news">Noticias</a>
-      <a href="#contact">Ayuda</a>
-    </div>
-
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
   <!-- NAVBAR -->
 
   <header>
-    <div class="imgLogo"><img src="/img/logo.png" alt="imagen logo nexos"></div>
+    <div id="nav" class="topnav">
+      <a href="#home" class="active"><img src="/img/logo.png" alt="" /></a>
 
-    <nav class="navbar">
-      <a href="#about">Nosotros</a>
-      <a href="#news">Noticias</a>
-      <a href="#contact">Ayuda</a>
-    </nav>
+      <div class="myLinks" id="myLinks">
+        <a href="#about">Nosotros</a>
+        <a href="#news">Noticias</a>
+        <a href="#contact">Ayuda</a>
+      </div>
 
-    <div class="containerBtn">
-      <button id="btnModal" class="btn">INGRESAR</button>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="containerBtn">
+        <button id="btnModal" class="btn">INGRESAR</button>
+      </div>
     </div>
 
-  <!-- MODAL -->
+    <!-- MODAL -->
 
     <div id="myModal" class="modal">
       <div class="flexModal">
-       
+
         <div class="modal-content"></div>
 
         <div class="content2">
@@ -79,7 +70,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
 
       </div>
@@ -106,7 +97,7 @@
 
   <main>
 
-  <!-- Seccion imagenes con texto --->
+    <!-- Seccion imagenes con texto --->
 
     <div class="divContainer" id="about">
       <article class="infoContainer">
@@ -142,7 +133,7 @@
     </div>
 
 
-  <!-- Seccion cards de colores --->
+    <!-- Seccion cards de colores --->
 
     <article class="oppContainer">
       <div class="content">
@@ -165,7 +156,7 @@
           </div>
 
           <div class="card2 card">
-            <img class="mas" src="/img/icono-mas.png" >
+            <img class="mas" src="/img/icono-mas.png">
             <img class="iconCard" src="/img/icono-mano-corazon.png">
             <h4 class="titleCard">Donar</h4>
           </div>
@@ -178,7 +169,7 @@
 
           <div class="card4 card">
             <img class="mas" src="/img/icono-mas.png">
-            <img class="iconCard" src="/img/icono-maletin.png" >
+            <img class="iconCard" src="/img/icono-maletin.png">
             <h4 class="titleCard">Llamados laborales</h4>
           </div>
         </section>
@@ -327,7 +318,7 @@
   </article>
 
   <!-- CONTACTO --->
-  
+
   <div class="flexContactCont">
     <article class="containerContact">
       <div class="contactImage"></div>
@@ -362,7 +353,7 @@
   <footer>
     <hr class="hr1" />
     <div class="footerContainer">
-      <div class="logoFooter"><img src="/img/logo-blanco.png" alt="Logo NEXOS" /></div>
+      <div class="logoFooter"><a href="#nav"><img src="/img/logo-blanco.png" alt="Logo NEXOS" /></a></div>
       <div class="position">
         <div class="navFooter">
           <li class="footLink">
@@ -398,4 +389,5 @@
 
   <script src="/js/index.js"></script>
 </body>
+
 </html>

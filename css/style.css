@@ -419,10 +419,16 @@ h1 {
 /* ======================Cards content========================== */
 .mas {
   float: right;
+  width: 25px;
 }
 
 .iconCard {
   padding-top: 10px;
+  width: 70px;
+}
+
+#iconCD1{
+  width: 45px;
 }
 
 .titleCard {
@@ -712,6 +718,10 @@ footer {
   text-decoration: none;
   list-style: none;
   color: var(--cl-blank);
+}
+
+.footLink a:hover {
+  opacity: 0.8;
 }
 
 .footIcons a img {

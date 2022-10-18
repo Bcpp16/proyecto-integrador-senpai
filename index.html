@@ -13,12 +13,12 @@
 <body>
 
   <div class="topnav">
-    <a href="#home" class="active"><img src="/img/logo.png" alt="" /></a>
+    <a href="#home" class="active"><img src="/img/logo.png" alt="imagen logo nexos"></a>
 
     <div id="myLinks">
-      <a href="#">Nosotros</a>
-      <a href="#">Noticias</a>
-      <a href="#">Ayuda</a>
+      <a href="#about">Nosotros</a>
+      <a href="#news">Noticias</a>
+      <a href="#contact">Ayuda</a>
     </div>
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -26,57 +26,67 @@
     </a>
   </div>
 
+  <!-- NAVBAR -->
+
   <header>
-    <div class="imgLogo"><img src="/img/logo.png" alt="" /></div>
+    <div class="imgLogo"><img src="/img/logo.png" alt="imagen logo nexos"></div>
 
     <nav class="navbar">
-      <li><a>Nosotros</a></li>
-      <li><a>Noticias</a></li>
-      <li><a>Ayuda</a></li>
+      <a href="#about">Nosotros</a>
+      <a href="#news">Noticias</a>
+      <a href="#contact">Ayuda</a>
     </nav>
 
     <div class="containerBtn">
       <button id="btnModal" class="btn">INGRESAR</button>
     </div>
 
+  <!-- MODAL -->
+
     <div id="myModal" class="modal">
       <div class="flexModal">
-        <!-- Modal -->
+       
         <div class="modal-content"></div>
+
         <div class="content2">
+
           <span class="comeBack">&larr; volver atrás</span>
           <span class="close">X</span>
           <h2>Registrar</h2>
 
           <div class="cardModal">
             <div class="color color1">
-              <img src="/img/icono-maletin.png" alt="Avatar" />
+              <img src="/img/icono-maletin.png">
             </div>
             <div class="contentCardModal">
               <h4 class="title1">MI EMPRESA</h4>
               <p>Breve descripcion a que nos referimos</p>
               <div class="arrow">
-                <a href="#"><img src="/img/icono-flecha.png" alt="" /></a>
+                <a href="#"><img src="/img/icono-flecha.png"></a>
               </div>
             </div>
           </div>
 
           <div class="cardModal">
             <div class="color color2">
-              <img src="/img/icono-persona.png" alt="Avatar" />
+              <img src="/img/icono-persona.png">
             </div>
             <div class="contentCardModal">
               <h4 class="title2">MI ORGANIZACIÓN</h4>
               <p>Estamos para ayudarlos a tener exito</p>
               <div class="arrow">
-                <a href="#"><img src="/img/icono-flecha.png" alt="" /></a>
+                <a href="#"><img src="/img/icono-flecha.png"></a>
               </div>
             </div>
           </div>
+          
         </div>
+
       </div>
     </div>
   </header>
+
+  <!-- HERO - imagen con texto -->
 
   <section class="hero">
     <div class="heroContent">
@@ -92,8 +102,13 @@
     </div>
   </section>
 
+  <!-- MAIN --->
+
   <main>
-    <div class="divContainer">
+
+  <!-- Seccion imagenes con texto --->
+
+    <div class="divContainer" id="about">
       <article class="infoContainer">
         <div class="item item1"></div>
 
@@ -125,6 +140,10 @@
         <div class="item item4"></div>
       </article>
     </div>
+
+
+  <!-- Seccion cards de colores --->
+
     <article class="oppContainer">
       <div class="content">
         <h2>Encuentra las mejores oportunidades</h2>
@@ -140,26 +159,26 @@
       <div class="gridContainer">
         <section class="cards">
           <div class="card1 card">
-            <img class="mas" src="/img/icono-mas.png" alt="icono mas" style="width: 25px" />
-            <img class="iconCard" src="/img/icono-mano.png" alt="mano card1" style="width: 45px" />
+            <img class="mas" src="/img/icono-mas.png">
+            <img class="iconCard" id="iconCD1" src="/img/icono-mano.png">
             <h4 class="titleCard">Ser voluntario</h4>
           </div>
 
           <div class="card2 card">
-            <img class="mas" src="/img/icono-mas.png" alt="icono mas" style="width: 25px" />
-            <img class="iconCard" src="/img/icono-mano-corazon.png" alt="mano card1" style="width: 70px" />
+            <img class="mas" src="/img/icono-mas.png" >
+            <img class="iconCard" src="/img/icono-mano-corazon.png">
             <h4 class="titleCard">Donar</h4>
           </div>
 
           <div class="card3 card">
-            <img class="mas" src="/img/icono-mas.png" alt="icono mas" style="width: 25px" />
-            <img class="iconCard" src="/img/icono-reciclar.png" alt="mano card1" style="width: 70px" />
+            <img class="mas" src="/img/icono-mas.png">
+            <img class="iconCard" src="/img/icono-reciclar.png">
             <h4 class="titleCard">Reciclar</h4>
           </div>
 
           <div class="card4 card">
-            <img class="mas" src="/img/icono-mas.png" alt="icono mas" style="width: 25px" />
-            <img class="iconCard" src="/img/icono-maletin.png" alt="mano card1" style="width: 70px" />
+            <img class="mas" src="/img/icono-mas.png">
+            <img class="iconCard" src="/img/icono-maletin.png" >
             <h4 class="titleCard">Llamados laborales</h4>
           </div>
         </section>
@@ -167,7 +186,9 @@
     </article>
   </main>
 
-  <article class="newsContainer">
+  <!-- NOTICIAS --->
+
+  <article class="newsContainer" id="news">
     <div class="newsContent">
       <h2 class="titleNews">Noticias</h2>
       <a class="linkNews" href="#">ver más</a>
@@ -176,18 +197,18 @@
     <section class="newsCards">
       <div class="cd1 cdHover">
         <div class="imgCard">
-          <img src="/img/imgPrimerCard.jpg" alt="Avatar" />
+          <img src="/img/imgPrimerCard.jpg" alt="Mujer con tres caninos">
           <button class="btnCard">ANIMALES</button>
         </div>
         <div class="container">
           <div class="headerCard">
             <div class="date">
-              <img src="/img/icono-calendario.png" alt="" />
+              <img src="/img/icono-calendario.png">
               <span>10/08/2021</span>
             </div>
 
             <div class="hour">
-              <img src="/img/icono-reloj.png" alt="" />
+              <img src="/img/icono-reloj.png">
               <span> 4 min</span>
             </div>
           </div>
@@ -201,7 +222,7 @@
             </p>
           </div>
           <div class="moreCard">
-            <img src="/img/icono-flecha.png" alt="" />
+            <img src="/img/icono-flecha.png">
             <a class="linkCard" href="#">ver más</a>
           </div>
         </div>
@@ -209,18 +230,18 @@
 
       <div class="cd2 cdHover">
         <div class="imgCard">
-          <img src="/img/imgSegundaCard.jpg" alt="Avatar" />
+          <img src="/img/imgSegundaCard.jpg" alt="imagen tres hombres">
           <button class="btnCard">URUGUAY</button>
         </div>
         <div class="container">
           <div class="headerCard">
             <div class="date">
-              <img src="/img/icono-calendario.png" alt="" />
+              <img src="/img/icono-calendario.png">
               <span>10/08/2021</span>
             </div>
 
             <div class="hour">
-              <img src="/img/icono-reloj.png " alt="" />
+              <img src="/img/icono-reloj.png ">
               <span> 4 min</span>
             </div>
           </div>
@@ -234,7 +255,7 @@
             </p>
           </div>
           <div class="moreCard">
-            <img src="/img/icono-flecha.png" alt="" />
+            <img src="/img/icono-flecha.png">
             <a class="linkCard" href="#">ver más</a>
           </div>
         </div>
@@ -242,18 +263,18 @@
 
       <div class="cd3 cdHover">
         <div class="imgCard">
-          <img src="/img/imgTercerCard.jpg" alt="Avatar" />
+          <img src="/img/imgTercerCard.jpg" alt="Grupo de personas">
           <button class="btnCard">VOLUNTARIADO</button>
         </div>
         <div class="container">
           <div class="headerCard">
             <div class="date">
-              <img src="/img/icono-calendario.png" alt="" />
+              <img src="/img/icono-calendario.png">
               <span>10/08/2021</span>
             </div>
 
             <div class="hour">
-              <img src="/img/icono-reloj.png" alt="" />
+              <img src="/img/icono-reloj.png">
               <span>3 min</span>
             </div>
           </div>
@@ -265,7 +286,7 @@
             </p>
           </div>
           <div class="moreCard">
-            <img src="/img/icono-flecha.png" alt="" />
+            <img src="/img/icono-flecha.png">
             <a class="linkCard" href="#">ver más</a>
           </div>
         </div>
@@ -273,18 +294,18 @@
 
       <div class="cd4 cdHover">
         <div class="imgCard">
-          <img src="/img/imgCuartaCard.jpg" alt="Avatar" />
+          <img src="/img/imgCuartaCard.jpg" alt="Personas construyendo una vivienda">
           <button class="btnCard">URUGUAY</button>
         </div>
         <div class="container">
           <div class="headerCard">
             <div class="date">
-              <img src="/img/icono-calendario.png" alt="" />
+              <img src="/img/icono-calendario.png">
               <span>10/08/2021</span>
             </div>
 
             <div class="hour">
-              <img src="/img/icono-reloj.png" alt="" />
+              <img src="/img/icono-reloj.png">
               <span>5 min</span>
             </div>
           </div>
@@ -296,23 +317,24 @@
             </p>
           </div>
           <div class="moreCard">
-            <img src="/img/icono-flecha.png" alt="" />
+            <img src="/img/icono-flecha.png">
             <a class="linkCard" href="#">ver más</a>
           </div>
         </div>
       </div>
 
-
     </section>
   </article>
 
+  <!-- CONTACTO --->
+  
   <div class="flexContactCont">
     <article class="containerContact">
       <div class="contactImage"></div>
 
       <section class="forms">
         <div class="textContact">
-          <h2>Contacto</h2>
+          <h2 id="contact">Contacto</h2>
         </div>
         <form>
           <div class="inputs">
@@ -334,20 +356,23 @@
       </section>
     </article>
   </div>
+
+  <!-- FOOTER --->
+
   <footer>
     <hr class="hr1" />
     <div class="footerContainer">
-      <div class="logoFooter"><img src="/img/logo-blanco.png" alt="" /></div>
+      <div class="logoFooter"><img src="/img/logo-blanco.png" alt="Logo NEXOS" /></div>
       <div class="position">
         <div class="navFooter">
           <li class="footLink">
             <a href="#">Nosotros</a>
           </li>
           <li class="footLink">
-            <a href="#">Noticias</a>
+            <a href="#news">Noticias</a>
           </li>
           <li class="footLink">
-            <a href="#">Contacto</a>
+            <a href="#contact">Contacto</a>
           </li>
           <li class="footLink">
             <a href="#">Terminos y condiciones</a>
@@ -356,9 +381,9 @@
         <div class="footIcons">
           <h4>Seguinos!</h4>
 
-          <a href="#"><img src="/img/face.png" alt="" /></a>
-          <a href="#"><img src="/img/twitter.png" alt="" /></a>
-          <a href="#"><img src="/img/instagram.png" alt="" /></a>
+          <a href="#"><img src="/img/face.png"></a>
+          <a href="#"><img src="/img/twitter.png"></a>
+          <a href="#"><img src="/img/instagram.png"></a>
         </div>
       </div>
 
@@ -368,7 +393,9 @@
 
     <p class="copy">copyright © 2021 All rights reserved.</p>
   </footer>
+
+
+
   <script src="/js/index.js"></script>
 </body>
-
 </html>

@@ -36,6 +36,7 @@ h2 {
 
 /* ======== HEADER ======== */
 
+
 header {
   display: flex;
   padding: 30px 130px;
@@ -84,6 +85,7 @@ header img {
   background-color: var(--bg-footer);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 /*==========MODAL=============*/
 
@@ -490,7 +492,7 @@ h1 {
   background-color: var(--cl-blank);
   width: 95%;
   border-radius: 10px;
-  
+
 }
 
 .cd3 {
@@ -498,7 +500,7 @@ h1 {
   background-color: var(--cl-blank);
   width: 95%;
   border-radius: 10px;
-  
+
 }
 
 .cd4 {
@@ -507,7 +509,7 @@ h1 {
   width: 95%;
   height: 100%;
   border-radius: 10px;
-  
+
 }
 
 .cdHover:hover {
@@ -561,6 +563,10 @@ h1 {
   color: var(--cl-grey);
 }
 
+.txtCard {
+  min-height: 220px;
+}
+
 .txtCard h3 {
   font-size: 16px;
   font-weight: 500;
@@ -595,9 +601,10 @@ h1 {
   margin-bottom: 25px;
 }
 
-.textContact h2{
+.textContact h2 {
   font-size: 40px;
 }
+
 .flexContactCont {
   justify-content: center;
   display: flex;
@@ -649,6 +656,7 @@ form {
   width: 300px;
   max-width: 300px;
   max-height: 120px;
+  resize: none;
 }
 
 
@@ -732,6 +740,7 @@ hr {
 
 @media(max-width: 390px) {
 
+
   header {
     display: none;
   }
@@ -774,8 +783,9 @@ hr {
 
   .topnav a:hover {
     background-color: var(--cl-blank);
-    color: var(--cl-black);
+
   }
+
 
   /*===================HERO===================*/
 
@@ -978,5 +988,4 @@ hr {
   .copy {
     padding-bottom: 10px;
   }
-
 }

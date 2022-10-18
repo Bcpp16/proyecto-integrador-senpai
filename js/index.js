@@ -9,7 +9,6 @@ function myFunction() {
   }
 }
 
-
 // MODAL ==============================================
 
 let modal = document.getElementById("myModal");

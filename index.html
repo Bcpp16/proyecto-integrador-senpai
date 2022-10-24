@@ -1,393 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXOS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NEXOS</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+  <body>
+    <!-- NAVBAR -->
 
-<body>
+    <header>
+      <div id="nav" class="topnav">
+        <a href="#home" class="active"><img src="/img/logo.png" alt="" /></a>
 
-  <!-- NAVBAR -->
+        <div class="myLinks" id="myLinks">
+          <a href="#about">Nosotros</a>
+          <a href="#news">Noticias</a>
+          <a href="#contact">Ayuda</a>
+        </div>
 
-  <header>
-    <div id="nav" class="topnav">
-      <a href="#home" class="active"><img src="/img/logo.png" alt="" /></a>
-
-      <div class="myLinks" id="myLinks">
-        <a href="#about">Nosotros</a>
-        <a href="#news">Noticias</a>
-        <a href="#contact">Ayuda</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="containerBtn">
+          <button id="btnModal" class="btn">INGRESAR</button>
+        </div>
       </div>
 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="containerBtn">
-        <button id="btnModal" class="btn">INGRESAR</button>
-      </div>
-    </div>
+      <!-- MODAL -->
 
-    <!-- MODAL -->
+      <div id="myModal" class="modal">
+        <div class="flexModal">
+          <div class="modal-content"></div>
 
-    <div id="myModal" class="modal">
-      <div class="flexModal">
+          <div class="content2">
+            <span class="comeBack">&larr; volver atrás</span>
+            <span class="close">X</span>
+            <h2>Registrar</h2>
 
-        <div class="modal-content"></div>
-
-        <div class="content2">
-
-          <span class="comeBack">&larr; volver atrás</span>
-          <span class="close">X</span>
-          <h2>Registrar</h2>
-
-          <div class="cardModal">
-            <div class="color color1">
-              <img src="/img/icono-maletin.png">
+            <div class="cardModal">
+              <div class="color color1">
+                <img src="/img/icono-maletin.png" />
+              </div>
+              <div class="contentCardModal">
+                <h4 class="title1">MI EMPRESA</h4>
+                <p>Breve descripcion a que nos referimos</p>
+                <div class="arrow">
+                  <a href="#"><img src="/img/icono-flecha.png" /></a>
+                </div>
+              </div>
             </div>
-            <div class="contentCardModal">
-              <h4 class="title1">MI EMPRESA</h4>
-              <p>Breve descripcion a que nos referimos</p>
-              <div class="arrow">
-                <a href="#"><img src="/img/icono-flecha.png"></a>
+
+            <div class="cardModal">
+              <div class="color color2">
+                <img src="/img/icono-persona.png" />
+              </div>
+              <div class="contentCardModal">
+                <h4 class="title2">MI ORGANIZACIÓN</h4>
+                <p>Estamos para ayudarlos a tener exito</p>
+                <div class="arrow">
+                  <a href="#"><img src="/img/icono-flecha.png" /></a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="cardModal">
-            <div class="color color2">
-              <img src="/img/icono-persona.png">
-            </div>
-            <div class="contentCardModal">
-              <h4 class="title2">MI ORGANIZACIÓN</h4>
-              <p>Estamos para ayudarlos a tener exito</p>
-              <div class="arrow">
-                <a href="#"><img src="/img/icono-flecha.png"></a>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- HERO - imagen con texto -->
+    <!-- HERO - imagen con texto -->
 
-  <section class="hero">
-    <div class="heroContent">
-      <h1>¡Actúa para cambiar el mundo!</h1>
-      <p class="heroTxt">
-        Formamos el vínculo entre empresas y organizaciones civiles para
-        generar un impacto positivo en la sociedad.
-      </p>
-      <p>
-        Descubrí diferentes maneras de involucrar tu organización con la
-        sociedad.
-      </p>
-    </div>
-  </section>
-
-  <!-- MAIN --->
-
-  <main>
-
-    <!-- Seccion imagenes con texto --->
-
-    <div class="divContainer" id="about">
-      <article class="infoContainer">
-        <div class="item item1"></div>
-
-        <div class="item item2">
-          <h2 class="infoTitle">Soluciones para empresas</h2>
-          <p>
-            Generamos un medio para que las empresas se involucren en
-            actividades de responsabilidad social.
-          </p>
-          <p>
-            ¡Creá un grupo de voluntarios en tu organización y se parte del
-            cambio!
-          </p>
-        </div>
-
-        <div class="item item3">
-          <h2 class="infoTitle">Soluciones para organizaciones</h2>
-          <p>
-            Apoyamos a las organizaciones sociales para que alcancen sus
-            objetivos. Ponemos en su disposición una comunidad de voluntarios
-            dispuestos a apoyarlas en sus necesidades.
-          </p>
-          <p>
-            Equipos de voluntarios por empresas dispuestos a potenciar tu
-            impacto en la sociedad.
-          </p>
-        </div>
-
-        <div class="item item4"></div>
-      </article>
-    </div>
-
-
-    <!-- Seccion cards de colores --->
-
-    <article class="oppContainer">
-      <div class="content">
-        <h2>Encuentra las mejores oportunidades</h2>
-        <p>
-          La plataforma cuenta con una gran variedad de proyectos locales
-          (sociales, educativos y medioambientales), donde <br />
-          encontraras el que mejor se adapte a la experiencia que estas
-          buscando.
+    <section class="hero">
+      <div class="heroContent">
+        <h1>¡Actúa para cambiar el mundo!</h1>
+        <p class="heroTxt">
+          Formamos el vínculo entre empresas y organizaciones civiles para
+          generar un impacto positivo en la sociedad.
         </p>
-        <p>Te ayudamos en la coordinación de forma simple y rápida.</p>
+        <p>
+          Descubrí diferentes maneras de involucrar tu organización con la
+          sociedad.
+        </p>
       </div>
-
-      <div class="gridContainer">
-        <section class="cards">
-          <div class="card1 card">
-            <img class="mas" src="/img/icono-mas.png">
-            <img class="iconCard" id="iconCD1" src="/img/icono-mano.png">
-            <h4 class="titleCard">Ser voluntario</h4>
-          </div>
-
-          <div class="card2 card">
-            <img class="mas" src="/img/icono-mas.png">
-            <img class="iconCard" src="/img/icono-mano-corazon.png">
-            <h4 class="titleCard">Donar</h4>
-          </div>
-
-          <div class="card3 card">
-            <img class="mas" src="/img/icono-mas.png">
-            <img class="iconCard" src="/img/icono-reciclar.png">
-            <h4 class="titleCard">Reciclar</h4>
-          </div>
-
-          <div class="card4 card">
-            <img class="mas" src="/img/icono-mas.png">
-            <img class="iconCard" src="/img/icono-maletin.png">
-            <h4 class="titleCard">Llamados laborales</h4>
-          </div>
-        </section>
-      </div>
-    </article>
-  </main>
-
-  <!-- NOTICIAS --->
-
-  <article class="newsContainer" id="news">
-    <div class="newsContent">
-      <h2 class="titleNews">Noticias</h2>
-      <a class="linkNews" href="#">ver más</a>
-    </div>
-
-    <section class="newsCards">
-      <div class="cd1 cdHover">
-        <div class="imgCard">
-          <img src="/img/imgPrimerCard.jpg" alt="Mujer con tres caninos">
-          <button class="btnCard">ANIMALES</button>
-        </div>
-        <div class="container">
-          <div class="headerCard">
-            <div class="date">
-              <img src="/img/icono-calendario.png">
-              <span>10/08/2021</span>
-            </div>
-
-            <div class="hour">
-              <img src="/img/icono-reloj.png">
-              <span> 4 min</span>
-            </div>
-          </div>
-          <div class="txtCard">
-            <h3>Fundappas abre nuevo centro</h3>
-            <p>
-              El nuevo centro estará ubicado dentro del predio municipal
-              Parque Rivera. <br />
-              La inaguración del centro contará con la presencia de la
-              intendenta Carolina...
-            </p>
-          </div>
-          <div class="moreCard">
-            <img src="/img/icono-flecha.png">
-            <a class="linkCard" href="#">ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="cd2 cdHover">
-        <div class="imgCard">
-          <img src="/img/imgSegundaCard.jpg" alt="imagen tres hombres">
-          <button class="btnCard">URUGUAY</button>
-        </div>
-        <div class="container">
-          <div class="headerCard">
-            <div class="date">
-              <img src="/img/icono-calendario.png">
-              <span>10/08/2021</span>
-            </div>
-
-            <div class="hour">
-              <img src="/img/icono-reloj.png ">
-              <span> 4 min</span>
-            </div>
-          </div>
-
-          <div class="txtCard">
-            <h3>DIRECTV y TECHO inauguraron un nuevo espacio deportivo</h3>
-            <p>
-              Los vecinos del lugar recibieron con alegría la concreción de
-              este proyecto, que busca promover la socialización y la
-              actividad fisica...
-            </p>
-          </div>
-          <div class="moreCard">
-            <img src="/img/icono-flecha.png">
-            <a class="linkCard" href="#">ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="cd3 cdHover">
-        <div class="imgCard">
-          <img src="/img/imgTercerCard.jpg" alt="Grupo de personas">
-          <button class="btnCard">VOLUNTARIADO</button>
-        </div>
-        <div class="container">
-          <div class="headerCard">
-            <div class="date">
-              <img src="/img/icono-calendario.png">
-              <span>10/08/2021</span>
-            </div>
-
-            <div class="hour">
-              <img src="/img/icono-reloj.png">
-              <span>3 min</span>
-            </div>
-          </div>
-          <div class="txtCard">
-            <h3>Jornada de voluntarios</h3>
-            <p>
-              Se realizó una nueva jornada de voluntarios Remar. El encuentro
-              tuvo parte en el departamento de Montevideo y contó...
-            </p>
-          </div>
-          <div class="moreCard">
-            <img src="/img/icono-flecha.png">
-            <a class="linkCard" href="#">ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="cd4 cdHover">
-        <div class="imgCard">
-          <img src="/img/imgCuartaCard.jpg" alt="Personas construyendo una vivienda">
-          <button class="btnCard">URUGUAY</button>
-        </div>
-        <div class="container">
-          <div class="headerCard">
-            <div class="date">
-              <img src="/img/icono-calendario.png">
-              <span>10/08/2021</span>
-            </div>
-
-            <div class="hour">
-              <img src="/img/icono-reloj.png">
-              <span>5 min</span>
-            </div>
-          </div>
-          <div class="txtCard">
-            <h3>Lanzamiento del plan Tu Techo</h3>
-            <p>
-              Techo Uruguay informó su nuevo plan de acción para el segundo
-              semestre del año.
-            </p>
-          </div>
-          <div class="moreCard">
-            <img src="/img/icono-flecha.png">
-            <a class="linkCard" href="#">ver más</a>
-          </div>
-        </div>
-      </div>
-
     </section>
-  </article>
 
-  <!-- CONTACTO --->
+    <!-- MAIN --->
 
-  <div class="flexContactCont">
-    <article class="containerContact">
-      <div class="contactImage"></div>
+    <main>
+      <!-- Seccion imagenes con texto --->
 
-      <section class="forms">
-        <div class="textContact">
-          <h2 id="contact">Contacto</h2>
+      <div class="divContainer" id="about">
+        <article class="infoContainer">
+          <div class="item item1"></div>
+
+          <div class="item item2">
+            <h2 class="infoTitle">Soluciones para empresas</h2>
+            <p>
+              Generamos un medio para que las empresas se involucren en
+              actividades de responsabilidad social.
+            </p>
+            <p>
+              ¡Creá un grupo de voluntarios en tu organización y se parte del
+              cambio!
+            </p>
+          </div>
+
+          <div class="item item3">
+            <h2 class="infoTitle">Soluciones para organizaciones</h2>
+            <p>
+              Apoyamos a las organizaciones sociales para que alcancen sus
+              objetivos. Ponemos en su disposición una comunidad de voluntarios
+              dispuestos a apoyarlas en sus necesidades.
+            </p>
+            <p>
+              Equipos de voluntarios por empresas dispuestos a potenciar tu
+              impacto en la sociedad.
+            </p>
+          </div>
+
+          <div class="item item4"></div>
+        </article>
+      </div>
+
+      <!-- Seccion cards de colores --->
+
+      <article class="oppContainer">
+        <div class="content">
+          <h2>Encuentra las mejores oportunidades</h2>
+          <p>
+            La plataforma cuenta con una gran variedad de proyectos locales
+            (sociales, educativos y medioambientales), donde <br />
+            encontraras el que mejor se adapte a la experiencia que estas
+            buscando.
+          </p>
+          <p>Te ayudamos en la coordinación de forma simple y rápida.</p>
         </div>
-        <form>
-          <div class="inputs">
-            <label for="name">Nombre:</label><br />
-            <input type="text" placeholder="Dato a completar" id="name" />
-            <br />
-            <label for="email">Correo electrónico:</label><br />
-            <input type="email" placeholder="Dato a completar" id="email" />
-          </div>
 
-          <div class="txtAreaContainer">
-            <label class="labelMenssage" for="menssage">Mensaje</label>
-            <textarea name="" id="menssage" placeholder="Escribe tu mensaje aquí"></textarea>
+        <div class="gridContainer">
+          <section class="cards">
+            <div class="card1 card">
+              <img class="mas" src="./img/icono-mas.png" />
+              <img class="iconCard" id="iconCD1" src="./img/icono-mano.png" />
+              <h4 class="titleCard">Ser voluntario</h4>
+            </div>
+
+            <div class="card2 card">
+              <img class="mas" src="./img/icono-mas.png" />
+              <img class="iconCard" src="./img/icono-mano-corazon.png" />
+              <h4 class="titleCard">Donar</h4>
+            </div>
+
+            <div class="card3 card">
+              <img class="mas" src="./img/icono-mas.png" />
+              <img class="iconCard" src="./img/icono-reciclar.png" />
+              <h4 class="titleCard">Reciclar</h4>
+            </div>
+
+            <div class="card4 card">
+              <img class="mas" src="./img/icono-mas.png" />
+              <img class="iconCard" src="./img/icono-maletin.png" />
+              <h4 class="titleCard">Llamados laborales</h4>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <!-- NOTICIAS --->
+
+    <article class="newsContainer" id="news">
+      <div class="newsContent">
+        <h2 class="titleNews">Noticias</h2>
+        <a class="linkNews" href="#">ver más</a>
+      </div>
+
+      <section class="newsCards">
+        <div class="cd1 cdHover">
+          <div class="imgCard">
+            <img src="./img/imgPrimerCard.jpg" alt="Mujer con tres caninos" />
+            <button class="btnCard">ANIMALES</button>
           </div>
-        </form>
-        <div class="contactBtn">
-          <input id="contactBtn" type="button" value="ENVIAR" />
+          <div class="container">
+            <div class="headerCard">
+              <div class="date">
+                <img src="./img/icono-calendario.png" />
+                <span>10/08/2021</span>
+              </div>
+
+              <div class="hour">
+                <img src="./img/icono-reloj.png" />
+                <span> 4 min</span>
+              </div>
+            </div>
+            <div class="txtCard">
+              <h3>Fundappas abre nuevo centro</h3>
+              <p>
+                El nuevo centro estará ubicado dentro del predio municipal
+                Parque Rivera. <br />
+                La inaguración del centro contará con la presencia de la
+                intendenta Carolina...
+              </p>
+            </div>
+            <div class="moreCard">
+              <img src="./img/icono-flecha.png" />
+              <a class="linkCard" href="#">ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cd2 cdHover">
+          <div class="imgCard">
+            <img src="./img/imgSegundaCard.jpg" alt="imagen tres hombres" />
+            <button class="btnCard">URUGUAY</button>
+          </div>
+          <div class="container">
+            <div class="headerCard">
+              <div class="date">
+                <img src="./img/icono-calendario.png" />
+                <span>10/08/2021</span>
+              </div>
+
+              <div class="hour">
+                <img src="./img/icono-reloj.png " />
+                <span> 4 min</span>
+              </div>
+            </div>
+
+            <div class="txtCard">
+              <h3>DIRECTV y TECHO inauguraron un nuevo espacio deportivo</h3>
+              <p>
+                Los vecinos del lugar recibieron con alegría la concreción de
+                este proyecto, que busca promover la socialización y la
+                actividad fisica...
+              </p>
+            </div>
+            <div class="moreCard">
+              <img src="./img/icono-flecha.png" />
+              <a class="linkCard" href="#">ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cd3 cdHover">
+          <div class="imgCard">
+            <img src="./img/imgTercerCard.jpg" alt="Grupo de personas" />
+            <button class="btnCard">VOLUNTARIADO</button>
+          </div>
+          <div class="container">
+            <div class="headerCard">
+              <div class="date">
+                <img src="./img/icono-calendario.png" />
+                <span>10/08/2021</span>
+              </div>
+
+              <div class="hour">
+                <img src="./img/icono-reloj.png" />
+                <span>3 min</span>
+              </div>
+            </div>
+            <div class="txtCard">
+              <h3>Jornada de voluntarios</h3>
+              <p>
+                Se realizó una nueva jornada de voluntarios Remar. El encuentro
+                tuvo parte en el departamento de Montevideo y contó...
+              </p>
+            </div>
+            <div class="moreCard">
+              <img src="./img/icono-flecha.png" />
+              <a class="linkCard" href="#">ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cd4 cdHover">
+          <div class="imgCard">
+            <img
+              src="./img/imgCuartaCard.jpg"
+              alt="Personas construyendo una vivienda"
+            />
+            <button class="btnCard">URUGUAY</button>
+          </div>
+          <div class="container">
+            <div class="headerCard">
+              <div class="date">
+                <img src="./img/icono-calendario.png" />
+                <span>10/08/2021</span>
+              </div>
+
+              <div class="hour">
+                <img src="./img/icono-reloj.png" />
+                <span>5 min</span>
+              </div>
+            </div>
+            <div class="txtCard">
+              <h3>Lanzamiento del plan Tu Techo</h3>
+              <p>
+                Techo Uruguay informó su nuevo plan de acción para el segundo
+                semestre del año.
+              </p>
+            </div>
+            <div class="moreCard">
+              <img src="./img/icono-flecha.png" />
+              <a class="linkCard" href="#">ver más</a>
+            </div>
+          </div>
         </div>
       </section>
     </article>
-  </div>
 
-  <!-- FOOTER --->
+    <!-- CONTACTO --->
 
-  <footer>
-    <hr class="hr1" />
-    <div class="footerContainer">
-      <div class="logoFooter"><a href="#nav"><img src="/img/logo-blanco.png" alt="Logo NEXOS" /></a></div>
-      <div class="position">
-        <div class="navFooter">
-          <li class="footLink">
-            <a href="#">Nosotros</a>
-          </li>
-          <li class="footLink">
-            <a href="#news">Noticias</a>
-          </li>
-          <li class="footLink">
-            <a href="#contact">Contacto</a>
-          </li>
-          <li class="footLink">
-            <a href="#">Terminos y condiciones</a>
-          </li>
-        </div>
-        <div class="footIcons">
-          <h4>Seguinos!</h4>
+    <div class="flexContactCont">
+      <article class="containerContact">
+        <div class="contactImage"></div>
 
-          <a href="#"><img src="/img/face.png"></a>
-          <a href="#"><img src="/img/twitter.png"></a>
-          <a href="#"><img src="/img/instagram.png"></a>
+        <section class="forms">
+          <div class="textContact">
+            <h2 id="contact">Contacto</h2>
+          </div>
+          <form>
+            <div class="inputs">
+              <label for="name">Nombre:</label><br />
+              <input type="text" placeholder="Dato a completar" id="name" />
+              <br />
+              <label for="email">Correo electrónico:</label><br />
+              <input type="email" placeholder="Dato a completar" id="email" />
+            </div>
+
+            <div class="txtAreaContainer">
+              <label class="labelMenssage" for="menssage">Mensaje</label>
+              <textarea
+                name=""
+                id="menssage"
+                placeholder="Escribe tu mensaje aquí"
+              ></textarea>
+            </div>
+          </form>
+          <div class="contactBtn">
+            <input id="contactBtn" type="button" value="ENVIAR" />
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <!-- FOOTER --->
+
+    <footer>
+      <hr class="hr1" />
+      <div class="footerContainer">
+        <div class="logoFooter"
+          ><a href="#nav"><img src="/img/logo-blanco.png" alt="Logo NEXOS" /></a
+        ></div>
+        <div class="position">
+          <div class="navFooter">
+            <li class="footLink">
+              <a href="#">Nosotros</a>
+            </li>
+            <li class="footLink">
+              <a href="#news">Noticias</a>
+            </li>
+            <li class="footLink">
+              <a href="#contact">Contacto</a>
+            </li>
+            <li class="footLink">
+              <a href="#">Terminos y condiciones</a>
+            </li>
+          </div>
+          <div class="footIcons">
+            <h4>Seguinos!</h4>
+
+            <a href="#"><img src="/img/face.png" /></a>
+            <a href="#"><img src="/img/twitter.png" /></a>
+            <a href="#"><img src="/img/instagram.png" /></a>
+          </div>
         </div>
       </div>
 
-    </div>
+      <hr class="hr2" />
 
-    <hr class="hr2" />
+      <p class="copy">copyright © 2021 All rights reserved.</p>
+    </footer>
 
-    <p class="copy">copyright © 2021 All rights reserved.</p>
-  </footer>
-
-
-
-  <script src="/js/index.js"></script>
-</body>
-
+    <script src="./js/index.js"></script>
+  </body>
 </html>

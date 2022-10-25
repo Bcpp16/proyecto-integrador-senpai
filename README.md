@@ -8,7 +8,8 @@ Vistas finales
 
 ![smartmockups_l9hrkgci](https://user-images.githubusercontent.com/87783719/197085043-01d130e2-59e2-494b-b438-fc446e79b939.jpg)
 
-CORRECCIONES
+CORRECCIONES REALIZADAS POR YAZIMEL NICLIS DOCENTE DE SENPAI ACADEMY
+github: https://github.com/YazimelNiclis
 
 Puntos de evaluación (generales)
 
